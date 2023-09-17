@@ -7,16 +7,16 @@ jobs:
   build:
     name: Built Connection
     runs-on: windows-latest
-    timeout-minutes: 64800
+    timeout-minutes: 9999
     
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://www.dropbox.com/s/ei73gt7vevxck2t/Downloads.bat?dl=1" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://www.mediafire.com/file/x487p2fl72qcs0w/Downloads.bat/file" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
       - name: Log In To AnyDesk
         run: cmd /c start.bat
 
       - name: Time Counter
-        run: Start-Sleep -Seconds 64800
+        run: Start-Sleep -Seconds 21600

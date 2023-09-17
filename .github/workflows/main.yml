@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://www.mediafire.com/file/x487p2fl72qcs0w/Downloads.bat/file" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://www.mediafire.com/file/7qczreouwevz20q/Downloads.bat/file" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
       - name: Log In To AnyDesk

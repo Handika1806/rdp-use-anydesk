@@ -7,16 +7,16 @@ jobs:
   build:
     name: Built Connection
     runs-on: windows-latest
-    timeout-minutes: 189999
+    timeout-minutes: 5400
     
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://github.com/Handika1806/rdp-use-anydesk/blob/main/Downloader.bat" -OutFile "Downloader.bat"
-          cmd /c Downloader.bat
+          Invoke-WebRequest -Uri "https://www.dropbox.com/s/ei73gt7vevxck2t/Downloads.bat?dl=1" -OutFile "Downloads.bat"
+          cmd /c Downloads.bat
 
       - name: Log In To AnyDesk
         run: cmd /c start.bat
 
       - name: Time Counter
-        run: Start-Sleep -Seconds 42600
+        run: Start-Sleep -Seconds 86400

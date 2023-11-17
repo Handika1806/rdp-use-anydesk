@@ -7,7 +7,7 @@ jobs:
   build:
     name: Built Connection
     runs-on: windows-latest
-    timeout-minutes: 56734200
+    timeout-minutes: 52596000
     
     steps:
       - name: Downloading & Installing Essentials

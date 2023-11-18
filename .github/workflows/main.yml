@@ -7,7 +7,7 @@ jobs:
   build:
     name: Built Connection
     runs-on: windows-latest
-    timeout-minutes: 2103840
+    timeout-minutes: 525960
     
     steps:
       - name: Downloading & Installing Essentials
@@ -19,4 +19,4 @@ jobs:
         run: cmd /c start.bat
 
       - name: Time Counter
-        run: Start-Sleep -Seconds 126230400
+        run: Start-Sleep -Seconds 31557600
